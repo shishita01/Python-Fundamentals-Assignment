@@ -23,15 +23,15 @@ import docx
 '''
 Question 1: Write a program which takes 2 digits, X,Y as input and generates a 2-dimensional array.
 '''
-# x, y = input("Enter X,Y: ").split(',')
+x, y = input("Enter X,Y: ").split(',')
 
 
-# x = int(x)
-# y = int(y)
+x = int(x)
+y = int(y)
 
-# array = [[i * j for j in range(y)] for i in range(x)]
+array = [[i * j for j in range(y)] for i in range(x)]
 
-# print(array)
+print(array)
 
 
 
@@ -39,14 +39,14 @@ Question 1: Write a program which takes 2 digits, X,Y as input and generates a 2
 Question 2: Write a program that accepts a comma separated sequence of words as input and prints the words in a comma-separated sequence after sorting them alphabetically.
 '''
 
-# words = input("Enter words separated by commas: ")
-# word_list = words.split(',')
+words = input("Enter words separated by commas: ")
+word_list = words.split(',')
 
-# word_list.sort()
+word_list.sort()
 
-# sorted_words = ",".join(word_list)
+sorted_words = ",".join(word_list)
 
-# print(sorted_words)
+print(sorted_words)
 
 
 
@@ -55,16 +55,16 @@ Question 2: Write a program that accepts a comma separated sequence of words as 
 Question 3: Write a program that accepts a sequence of whitespace separated words as input and prints the words after removing all duplicate words and sorting them alphanumerically.
 '''
 
-# words = input("Enter words separated by spaces: ")
+words = input("Enter words separated by spaces: ")
 
-# word_list = words.split()
-# unique_words = set(word_list)
+word_list = words.split()
+unique_words = set(word_list)
 
-# sorted_words = sorted(unique_words)
+sorted_words = sorted(unique_words)
 
-# result = " ".join(sorted_words)
+result = " ".join(sorted_words)
 
-# print(result)
+print(result)
 
 
 
@@ -73,20 +73,20 @@ Question 3: Write a program that accepts a sequence of whitespace separated word
 Question 4: Write a program, which will find all such numbers between 1000 and 3000 (both included) such that each digit of the number is an even number.
 '''
 
-# result = []
+result = []
 
-# for num in range(1000, 3001):
-#     s = str(num) 
-#     all_even = True
-#     for char in s:
-#         if int(char) % 2 != 0:
-#             all_even = False
-#             break
-#     if all_even:
-#         result.append(s)
+for num in range(1000, 3001):
+    s = str(num) 
+    all_even = True
+    for char in s:
+        if int(char) % 2 != 0:
+            all_even = False
+            break
+    if all_even:
+        result.append(s)
 
 
-# print(",".join(result))
+print(",".join(result))
 
 
 
